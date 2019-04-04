@@ -39,6 +39,6 @@ after_success:
 - git add --all
 - git status
 - git commit -m "Travis update:2019_04_04" -m "master"
-- git remote set-url origin https://juraj.ciljak@gmail.com:210286Cj@github.com/JurajCiljak/sfdx-travisci-receive.git
+- git remote set-url origin https://JurajCiljak:210286Cj@github.com/JurajCiljak/sfdx-travisci-receive.git
 - git push origin master --quiet
 
