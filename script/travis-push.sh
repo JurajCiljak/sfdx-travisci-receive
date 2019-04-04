@@ -5,7 +5,7 @@ setup_git() {
   git config --global user.email "juraj.ciljak@gmail.com"
   git config --global user.name "JurajCiljak"
 }
-
+ 
 commit_country_json_files() {
   git checkout master
   # Current month and year, e.g: Apr 2018

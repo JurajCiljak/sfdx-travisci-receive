@@ -34,7 +34,9 @@ script:
 #- sfdx force:org:delete -u ciorg -p
 
 after_success:
-- .script/push.sh
+- script/travis-push.sh
+-  git config --global user.email "juraj.ciljak@gmail.com"
+-  git config --global user.name "JurajCiljak"
 - git config --global --list 
 - git add --all
 - git status
