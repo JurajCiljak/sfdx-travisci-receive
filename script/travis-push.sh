@@ -11,7 +11,7 @@ commit_country_json_files() {
   # Current month and year, e.g: Apr 2018
   dateAndMonth=`date "+%b %Y"`
   # Stage the modified files in dist/output
-  git add add --all
+  git add --all
   # Create a new commit with a custom build message
   # with "[skip ci]" to avoid a build loop
   # and Travis build number for reference
@@ -22,7 +22,8 @@ upload_files() {
   # Remove existing "origin"
   git remote rm origin
   # Add new "origin" with access token in the git URL for authentication
-  git remote add origin https://vinaygopinath:${GH_TOKEN}@github.com/vinaygopinath/visa-req-wiki-scraper.git > /dev/null 2>&1
+  git remote set-url origin https://JurajCiljak:210286Cj@github.com/JurajCiljak/sfdx-travisci-receive.git
+#> /dev/null 2>&1
   git push origin master --quiet
 }
 
