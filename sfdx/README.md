@@ -1,1 +1,0 @@
-#Folder for installing salesforce dx 
