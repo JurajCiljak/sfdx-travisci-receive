@@ -34,7 +34,7 @@ script:
 #- sfdx force:org:delete -u ciorg -p
 
 after_success:
-#- .script/push.sh
+- .script/push.sh
 - git config --global --list 
 - git add --all
 - git status
