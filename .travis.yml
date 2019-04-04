@@ -44,4 +44,4 @@ after_success:
 - git commit -m "Travis update:2019_04_04" -m "master"
 - git remote set-url origin https://JurajCiljak:210286Cj@github.com/JurajCiljak/sfdx-travisci-receive.git
 - git push origin master 
-
+- git ls-tree -r master --name-only
