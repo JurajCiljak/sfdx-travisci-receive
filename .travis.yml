@@ -6,6 +6,7 @@ env:
 - URL=https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz
 
 before_install:
+- chmod +x .script/travis-push.sh
 - gem install bundler
 - export SFDX_CONSUMERKEY=3MVG92u_V3UMpV.i2DsjLwz7NPFkwKNt8cOBnfSBmbhvel3y5Mt1lHWWyPslCiwiISgjDbqVFRQ==
 - export SFDX_USERNAME=test-q5z6zouooks9@example.com
@@ -34,7 +35,7 @@ script:
 #- sfdx force:org:delete -u ciorg -p
 
 after_success:
-- script/travis-push.sh
+- sh .script/travis-push.sh
 -  git config --global user.email "juraj.ciljak@gmail.com"
 -  git config --global user.name "JurajCiljak"
 - git config --global --list 
