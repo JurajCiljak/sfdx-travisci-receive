@@ -35,4 +35,5 @@ script:
 
 after_success:
 #- .script/push.sh
-- git config --global --list
+- git config --global --list 
+- git add --all 
