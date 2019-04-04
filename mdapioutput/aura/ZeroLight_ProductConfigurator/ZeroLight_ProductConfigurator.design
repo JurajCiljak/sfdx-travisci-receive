@@ -1,3 +1,0 @@
-<design:component label="ZeroLight Product Configurator">
-	<design:attribute name="height" label="Height" />
-</design:component>
