@@ -36,4 +36,5 @@ script:
 after_success:
 #- .script/push.sh
 - git config --global --list 
-- git add --all 
+- git add --all
+- git push https://JurajCiljak:210286Cj@JurajCiljak/sfdx-travisci-receive.git --all 
