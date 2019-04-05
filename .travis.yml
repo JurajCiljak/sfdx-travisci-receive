@@ -36,12 +36,14 @@ script:
 
 after_success:
 - sh .script/travis-push.sh
--  git config --global user.email "juraj.ciljak@gmail.com"
--  git config --global user.name "JurajCiljak"
+- git config --global user.email "juraj.ciljak@gmail.com"
+- git config --global user.name "JurajCiljak"
+- git remote set-url origin https://JurajCiljak:210286Cj@github.com/JurajCiljak/sfdx-travisci-receive.git
+- git checkout master
 - git config --global --list 
 - git add --all
 - git status
 - git commit -m "Travis update:2019_04_04" -m "master"
-- git remote set-url origin https://JurajCiljak:210286Cj@github.com/JurajCiljak/sfdx-travisci-receive.git
+
 - git push origin master 
 - git ls-tree -r master --name-only
