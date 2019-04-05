@@ -43,7 +43,7 @@ after_success:
 - git config --global --list 
 - git add --all 
 - git status
-- git commit -m "Travis update:$(date +%Y-%m-%d)" -m "master"
+- git commit -m "Travis update:$(date +%Y-%m-%d-%H-%M-%S)" -m "master"
 
 - git push origin master 
 - git ls-tree -r master --name-only
