@@ -45,7 +45,7 @@ after_success:
 - git status
 - dateAndMonth ="date "+%Y-%m-%d %H"
 - echo $dateAndMonth
-- git commit "Update: $dateAndMonth" -m "master"
+- git commit -m "Travis update: $dateAndMonth " -m "[skip ci]"
 
 - git push origin master 
 - git ls-tree -r master --name-only
