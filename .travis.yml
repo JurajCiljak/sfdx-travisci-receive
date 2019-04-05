@@ -43,9 +43,9 @@ after_success:
 - git config --global --list 
 - git add --all 
 - git status
-- dateAndMonth =`date '+%Y-%m-%d %H:%M:%S'`
+- dateAndMonth =`date '+%Y-%m-%d %H:%M:%S'
 - echo $dateAndMonth
-- git commit -m "Update: $dateAndMonth" -m "master"
+- git commit "Update: $dateAndMonth" -m "master"
 
 - git push origin master 
 - git ls-tree -r master --name-only
