@@ -43,8 +43,9 @@ after_success:
 - git config --global --list 
 - git add --all 
 - git status
-- dateAndMonth = "[%d/%b/%Y:%k:%M:%S %z]"
-- git commit -m "Travis update:$[%d/%b/%Y:%k:%M:%S %z]" -m "master"
+- dateAndMonth =`date '+%Y-%m-%d %H:%M:%S'`
+- echo $dateAndMonth
+- git commit -m "Update: $dateAndMonth" -m "master"
 
 - git push origin master 
 - git ls-tree -r master --name-only
