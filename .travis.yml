@@ -43,7 +43,7 @@ after_success:
 - git config --global --list 
 - git add --all 
 - git status
-- dateAndMonth ="date "+%Y-%m-%d %H"
+- dateAndMonth ="date "+%Y-%m-%d %H
 - echo $dateAndMonth
 - git commit -m "Travis update: $dateAndMonth " -m "[skip ci]"
 
