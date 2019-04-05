@@ -43,7 +43,7 @@ after_success:
 - git config --global --list 
 - git add --all 
 - git status
-- dateAndMonth =`date '+%Y-%m-%d %H:%M:%S'
+- dateAndMonth ='date '+%Y-%m-%d %H:%M:%S'
 - echo $dateAndMonth
 - git commit "Update: $dateAndMonth" -m "master"
 
