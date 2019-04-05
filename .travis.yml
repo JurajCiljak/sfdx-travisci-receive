@@ -45,7 +45,7 @@ after_success:
 - git status
 - d=$(date +%Y-%m-%d)
 - echo "$d"
-- git commit -m "Travis update: $$d " -m 
+- git commit -m "Travis update: $d " -m 
 
 - git push origin master 
 - git ls-tree -r master --name-only
