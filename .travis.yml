@@ -47,6 +47,6 @@ after_success:
 - git status
 
 #Commit
-- git commit -m "Update: ($(date +"%Y-%m-%d %H:%M:%S %s"))" -m "master"
+- git commit -m "Update: ($(date +"%Y-%m-%d %H-%M"))" -m "master"
 - git push origin master 
 - git ls-tree -r master --name-only
