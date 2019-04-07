@@ -44,7 +44,7 @@ after_success:
 - git checkout master
 - git config --global --list 
 - git add --all 
-- git status
+- git status 
 - git commit -m "Update: [$(date +%Y-%m-%d-%H-%M-%S)]" -m "master"
 
 - git push origin master 
