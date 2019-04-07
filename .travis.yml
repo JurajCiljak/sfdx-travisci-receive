@@ -44,8 +44,13 @@ after_success:
 - git checkout master
 - git config --global --list 
 - git add --all 
+<<<<<<< HEAD
 - git status 
 - git commit -m "Update: [$(date +%Y-%m-%d-%H-%M-%S)]" -m "master"
+=======
+- git status
+#- git commit -m "Update: [$(date +%Y-%m-%d-%H-%M-%S)]" -m "master"
+>>>>>>> parent of 3b563e6... Update .travis.yml
 
 - git push origin master 
 - git ls-tree -r master --name-only
